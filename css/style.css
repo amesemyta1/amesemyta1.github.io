@@ -383,4 +383,80 @@
 	{
 		text-decoration: none;
 		color: rgba(255,255,255,.3);
-	}	
+	}
+
+/* Базовые стили таблицы календаря */
+table.calendar {
+    width:200px;
+    margin: 0 auto;
+    border: 1px solid #ababab;
+    background: #f4f4f4;  
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal; 
+    font-size: 12px;
+    padding: 3px;
+}
+/* Панель сетки календаря */
+td.in_month {
+    text-align: center; 
+    font-weight: normal; 
+    font-size: 12px; 
+    border: 1px solid #bababa;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;/*Safari, Chrome*/
+    -moz-border-radius: 2px;/*Firefox*/
+    background: #ddd;
+    background: -moz-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);/* FF3.6+ */
+    background: -webkit-gradient(linear, 90deg, color-stop(0, BFBFBF), color-stop(100%, F6F0EA));/* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);/* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);/* Opera 11.10+ */
+    background: -ms-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);/* IE10+ */   
+} 
+/* Панель выбора месяца и года */      
+table.calendar caption {
+    border: 1px solid #ababab;    
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 2.2; 
+    text-shadow: 0 1px 1px #fff;
+    background: -moz-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);/* FF3.6+ */
+    background: -webkit-gradient(linear, 90deg, color-stop(0, BFBFBF), color-stop(100%, F6F0EA));/* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);/* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);/* Opera 11.10+ */
+    background: -ms-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);/* IE10+ */
+}
+/* Дни недели */       
+table.calendar th{
+    color: green;
+}
+/* Выделенная дата */
+table.calendar td.selected { 
+    background: #00c400; 
+    background: -moz-linear-gradient(270deg, #16B831 0, #42FF94 100%);/* FF3.6+ */
+    background: -webkit-gradient(linear, 270deg, color-stop(0, 16B831), color-stop(100%, 42FF94));/* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(270deg, #16B831 0, #42FF94 100%);/* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(270deg, #16B831 0, #42FF94 100%);/* Opera 11.10+ */
+    background: -ms-linear-gradient(270deg, #16B831 0, #42FF94 100%);/* IE10+ */
+    font-weight: normal; 
+    font-size: 10px; 
+}
+/* Ссылки сетки дат календаря */
+table.calendar a {
+    display: block; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #4e4ead;  
+    text-align: center; 
+    font-size: 10px; 
+}
+/* Ссылки навигации календаря */
+table.calendar caption a {
+    display: inline;
+    font-weight: bold;
+    font-size: 10px;
+    color: #898989;
+    text-shadow: 0 1px 1px #fff;
+}
